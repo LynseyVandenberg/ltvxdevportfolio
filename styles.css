@@ -1,0 +1,64 @@
+body, html {
+    height: 100%;
+
+}
+
+body {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #444;
+
+}
+
+.intro-left {
+    background: url(./images/1.jpg);
+    position:fixed;
+    left: 0;
+    width: 33.3333%;
+    height: 100%;
+    color: white;
+
+}
+
+@media (max-width: 768px) {
+    .intro-left{
+        height: 30vh;
+        margin-bottom: 0;
+        position: relative;
+        width: 100%;
+    }
+}
+
+.avatar {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    margin: 10rem;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+.full-height {
+    height: 100%;
+}
+
+.quote {
+    float: right;
+}
+
+section {
+    margin: 5rem;
+    font-size: 1.2rem;
+}
+
+.zoom {
+    padding: 5px;
+    transition: transform .2s; /* Animation */
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
